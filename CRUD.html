@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>CRUD-Application</title>
+</head>
+<body style="color: pink; background-color: cadetblue">
+    <div class="container mt-5">
+        <div class="text-center ">
+            <h3 class="display-6 mb-5"><strong>-:Crud-Application:-</strong></h3>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-5" autocomplete="off">
+                <div class="col-10 mb-4">
+                    <label for="firstName">FastName:</label>
+                    <br>
+                    <input class="from-control col-10 "  id="firstName" type="text" placeholder="Enter-First-Name">
+                </div>
+                <div class="col-10  mb-4">
+                    <label for="lastName">LastName:</label>
+                    <br>
+                    <input class="from-control col-10 "  id="lastName" type="text" placeholder="Enter-Last-Name">
+                </div>
+                <div class="col-10  mb-4">
+                    <label for="rollNo">RollNo:</label>
+                    <br>
+                    <input class="from-control  col-10"  id="rollNo" type="text" placeholder="Enter-RollNo">
+                </div>
+                <div class="col-10 col-md-8">
+                    <input class="btn btn-success add-btn" type="submit" value="SUBMIT">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-3 ">
+                <table class="table table-striped table-info">
+                    <thead>
+                        <tr>
+                            <th>First-Name</th>
+                            <th>Last-Name</th>
+                            <th>RollNo</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student_list">
+                        <tr>
+                            <td>dear</td>
+                            <td>programer</td>
+                            <td>25</td>
+                            <td>
+                                <a  href="#" class="btn btn-warning btn-sm edit">EDIT</a>
+                                <a  href="#" class="btn btn-danger btn-sm delete">DELETE</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
